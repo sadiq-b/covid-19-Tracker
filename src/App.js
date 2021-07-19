@@ -1,4 +1,3 @@
-    // app feature
 import React from 'react';
 
 const App = () => {
