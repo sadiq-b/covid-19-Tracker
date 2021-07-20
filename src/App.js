@@ -1,10 +1,16 @@
 import React from 'react';
-import '.App.css';
-
+import LineGraph from './Components/LineGraph';
+import './App.css';
+import CovidSummary from './Components/CovidSummary'
 const App = () => {
-    return(
-        <div>
-            E-commerce website homepage
+    return (
+        <div className='App'>
+            <CovidSummary
+            ConfirmedCases={0}
+            TotalRecovered ={0}
+            TotalDeaths={0}
+            Country={'Nigeria'}/>
+            <LineGraph />
         </div>
     )
 }
