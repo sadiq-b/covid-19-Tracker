@@ -2,7 +2,9 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 
 
+
 const LineGraph = (props) => {
+    
     return (
         <div
           style={{
@@ -13,11 +15,11 @@ const LineGraph = (props) => {
           >
 
             <Line data={{
-                labels: ['January', 'February', 'March', 'April', '5', '6'],
+                labels: props.xAxis.map(l=>l.substr(0,10)),
                 datasets: [
                     {
-                        label: 'covid dataset',
-                        data: [12, 19, 3, 5, 2, 3],
+                        label: 'corona virus live chart',
+                        data: props.yAxis,
                         fill: false,
                         backgroundColor: 'rgb(255, 99, 132)',
                         borderColor: 'rgba(255, 99, 132, 0.2)',
