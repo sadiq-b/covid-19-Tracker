@@ -1,3 +1,4 @@
+import { blue } from '@material-ui/core/colors';
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 
@@ -21,7 +22,7 @@ const LineGraph = (props) => {
                         label: 'corona virus live chart',
                         data: props.yAxis,
                         fill: false,
-                        backgroundColor: 'rgb(255, 99, 132)',
+                        backgroundColor:blue,
                         borderColor: 'rgba(255, 99, 132, 0.2)',
                     },
                 ],

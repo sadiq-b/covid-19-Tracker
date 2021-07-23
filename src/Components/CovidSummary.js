@@ -16,7 +16,7 @@ const CovidSummary = (props) => {
     return (
         <div>
             <div>
-                <h1 style={{ textTransform: 'capitalize' }}> {Country === '' ? 'Corona Virus Statistics' : Country}</h1>
+                <h1 style={{ textTransform: 'capitalize' }}> {Country === '' ? 'Corona Virus World Statistics' : Country}</h1>
                 <div
                     style={{
                         display: 'flex',

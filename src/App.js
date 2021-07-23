@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import LineGraph from './Components/LineGraph';
 import './App.css';
 import CovidSummary from './Components/CovidSummary';
+import Headline from './Components/Headline';
 import axios from './axios';
 const App = () => {
 
@@ -100,6 +101,10 @@ const App = () => {
                     <option value="30">Last 30 days</option>
                     <option value="90">Last 90 days</option>
                 </select>
+                <div>
+                <Headline/>
+                </div>
+               
 
             </div>
             <LineGraph 
