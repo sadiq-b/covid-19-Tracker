@@ -6,7 +6,8 @@
     padding:22px;
     background:yellow;
     box-sizing:border-box;
-    border:1px solid blue
+    border-radius:25px;
+    border:1px solid black
 }
 
 .scroll-container{

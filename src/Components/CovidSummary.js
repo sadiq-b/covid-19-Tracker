@@ -21,6 +21,7 @@ const CovidSummary = (props) => {
                     style={{
                         display: 'flex',
                         justifyContent: 'center',
+                        marginBottom:'12px',
                     }}>
                     <Card>
                         <span>ConfirmedCases</span><br />
