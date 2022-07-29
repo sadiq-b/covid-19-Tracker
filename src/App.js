@@ -28,6 +28,10 @@ const App = () => {
                     setTotalDeaths(res.data.Global.TotalDeaths)
                     setCovidDetails(res.data)
                     console.log(res)
+                    console.log(TotalDeaths)
+                    console.log(TotalRecovered)
+                    
+
                 }
 
             })
@@ -36,6 +40,7 @@ const App = () => {
             })
     }, [])
  
+
 
     const formatDate=(date)=>{
         const d =new Date(date);
